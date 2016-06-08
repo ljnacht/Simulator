@@ -1,0 +1,74 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+  <script src ="js/scripts.js"></script>
+  <script src="https://d3js.org/d3.v4.0.0-alpha.45.min.js"></script>
+</head>
+<body>
+
+
+  <div class="nav">
+    <img src="imgs/logo.png" alt="logo" class="logo"/>
+    <div class="nav-item"><a href="#yours"> Your Simulation </a></div>
+    <div class="nav-item"><a href="#cohort"> Cohort </a></div>
+    <div class="nav-item"><a href="#expert"> Expert </a></div>
+    <div class="nav-item"><a href="#compare"> Compare </a></div>
+  </div>
+
+  <div class="content">
+    <div id="yours" class="graph-container">
+      Your Simulation <br>
+      <div class="graph">
+        <img src="imgs/test-graph.png" alt="graph" />
+      </div>
+      <div class="graph-checklist">
+        <input type="checkbox" name="var1" value="Var1" class="cb red"> Variable 1 <br>
+        <input type="checkbox" name="var2" value="Var2" class="cb blue"> Variable 2 <br>
+        <input type="checkbox" name="var3" value="Var3" class="cb green"> Variable 3 <br>
+      </div>
+    </div>
+
+    <div id="cohort" class="graph-container">
+      Cohort <br>
+      <div class="graph">
+        <img src="imgs/test-graph.png" alt="graph" />
+      </div>
+      <div class="graph-checklist">
+        <input type="checkbox" name="var1" value="Var1" class="cb red"> Variable 1 <br>
+        <input type="checkbox" name="var2" value="Var2" class="cb blue"> Variable 2 <br>
+        <input type="checkbox" name="var3" value="Var3" class="cb green"> Variable 3 <br>
+      </div>
+    </div>
+
+    <div id="expert" class="graph-container">
+      Expert <br>
+      <div class="graph">
+        <img src="imgs/test-graph.png" alt="graph" />
+      </div>
+      <div class="graph-checklist">
+        <input type="checkbox" name="var1" value="Var1" class="cb red"> Variable 1 <br>
+        <input type="checkbox" name="var2" value="Var2" class="cb blue"> Variable 2 <br>
+        <input type="checkbox" name="var3" value="Var3" class="cb green"> Variable 3 <br>
+      </div>
+    </div>
+
+    <h1 id="compare"> Compare </h1>
+    <div class="graph-container">
+      <div class="graph">
+        Your Graph <br>
+        <img src="imgs/test-graph.png" alt="graph" />
+      </div>
+      <div class="graph-checklist">
+        <button class="update">UPDATE</button>
+        <input type="checkbox" name="var1" value="Var1" class="cb red"> Variable 1 <br>
+        <input type="checkbox" name="var2" value="Var2" class="cb blue"> Variable 2 <br>
+        <input type="checkbox" name="var3" value="Var3" class="cb green"> Variable 3 <br>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

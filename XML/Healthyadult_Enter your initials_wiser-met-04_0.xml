@@ -1,0 +1,758 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="../xml/simtest.xslt"?>
+<simtest type="Scenario" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Skagerak.xsd" SchemaVersion="3.3">
+	<product id="ri" lang="us"/>
+	<metainfo>
+		<score points="0002" pointsoutof="0014" percentage="014"/>
+		<patient name="Healthy adult"/>
+		<recording date="2015-10-29:14:58" local_date="10/29/2015" local_time="2:58 PM"/>
+	</metainfo>
+	<evaluation status="" comment="" bugzilla="0" playtime="1178" debrieftime="00000" showflags="0"/>
+	<seed type="-117"/>
+	<modeltrace>
+	</modeltrace>
+	<debriefing>
+		<com time="00:00:00"><span class="red"><span class="header">Debriefing</span></span><flags prio="title"/></com>
+		<com time="00:00:00">Healthy adult<flags prio="title"/></com>
+		<com time="00:00:00"><span class="red">Diagnosis:</span><span class="black">
+			</span><flags prio="diag" sp="1"/></com>
+		<com time="00:00:00">You arrive at the patient.<flags indent="1" prio="normal" printtime="1" sp="1"/></com>
+		<com time="00:00:40">You forgot to tap and touch the patient to check the responsiveness.<flags mark="cross" prio="normal" miss="1" points="0" outof="1" sp="1"/></com>
+		<com time="00:00:40">You forgot to open the airway of the patient. You should do so by tilting his head and lifting his chin.<flags mark="cross" prio="normal" miss="1" points="0" outof="1" sp="1"/></com>
+		<com time="00:00:40">You forgot to check if the patient is breathing at this point.<flags mark="cross" prio="normal" miss="1" points="0" outof="1" sp="1"/></com>
+		<com time="00:01:00">You attached a 3-lead [ERROR: UNKNOWN LINK NAME]&lt;Ecg&gt;ECG. It is correct to place the patient on the monitor.<flags mark="check" prio="normal" printtime="1" points="2" outof="2" sp="1"/></com>
+		<com time="00:01:00">After checking the breathing, you should check the pulse.<flags mark="cross" prio="normal" miss="1" points="0" outof="1" sp="1"/></com>
+		<com time="00:01:00">You should give oxygen as one of the basic measures here. All patients at risk of hypoxia should receive oxygen.<flags mark="cross" prio="normal" miss="1" points="0" outof="2" sp="1"/></com>
+		<com time="00:01:00">You should check the blood pressure as part of checking the vital signs.<flags mark="cross" prio="normal" miss="1" points="0" outof="3" sp="1"/></com>
+		<com time="00:10:20">Patient status - ECG: <span class="black">Atrial fibrillation</span>. Heart rate: <span class="black">140</span>. Pulse: <span class="black">Present</span>. Blood pressure: <span class="black">113/49 mmHg</span>. Respiration: <span class="black">12</span>. Conscious state: <span class="black">Appropriate</span>. SpO2: <span class="black">85%</span>. Temp.: <span class="black">37.22 C</span><flags indent="1" prio="status" printtime="1" sp="1"/></com>
+		<com time="01:10:20">Patient status - ECG: <span class="black">Atrial fibrillation</span>. Heart rate: <span class="black">140</span>. Pulse: <span class="black">Present</span>. Blood pressure: <span class="black">123/54 mmHg</span>. Respiration: <span class="black">12</span>. Conscious state: <span class="black">Appropriate</span>. SpO2: <span class="black">85%</span>. Temp.: <span class="black">37.22 C</span><flags indent="1" prio="status" printtime="1" sp="1"/></com>
+		<com time="02:01:00">It's important that you quickly obtain a focused history from this patient, particularly regarding the time of onset of symptoms.<flags mark="cross" prio="normal" points="0" outof="2" sp="1"/></com>
+		<com time="02:10:20">Patient status - ECG: <span class="black">Atrial fibrillation</span>. Heart rate: <span class="black">140</span>. Pulse: <span class="black">Present</span>. Blood pressure: <span class="black">122/54 mmHg</span>. Respiration: <span class="black">12</span>. Conscious state: <span class="black">Appropriate</span>. SpO2: <span class="black">85%</span>. Temp.: <span class="black">37.22 C</span><flags indent="1" prio="status" printtime="1" sp="1"/></com>
+		<com time="02:58:00">Patient status - ECG: <span class="black">Sinus rhythm</span>. Heart rate: <span class="black">80</span>. Pulse: <span class="black">Present</span>. Blood pressure: <span class="black">122/54 mmHg</span>. Respiration: <span class="black">12</span>. Conscious state: <span class="black">Appropriate</span>. SpO2: <span class="black">85%</span>. Temp.: <span class="black">37.22 C</span><flags indent="1" prio="status" printtime="1" sp="1"/></com>
+		<com time="03:58:20">Patient status - ECG: <span class="black">Sinus rhythm</span>. Heart rate: <span class="black">82</span>. Pulse: <span class="black">Present</span>. Blood pressure: <span class="black">111/48 mmHg</span>. Respiration: <span class="black">12</span>. Conscious state: <span class="black">Appropriate</span>. SpO2: <span class="black">94%</span>. Temp.: <span class="black">37.22 C</span><flags indent="1" prio="status" printtime="1" sp="1"/></com>
+		<com time="04:04:40">Patient status - ECG: <span class="black">Ventricular tachycardia</span>. Heart rate: <span class="black">180</span>. Pulse: <span class="black">Weak</span>. Blood pressure: <span class="black">83/41 mmHg</span>. Respiration: <span class="black">12</span>. Conscious state: <span class="black">Appropriate</span>. SpO2: <span class="black">82%</span>. Temp.: <span class="black">37.22 C</span><flags indent="1" prio="status" printtime="1" sp="1"/></com>
+		<com time="04:31:80">Patient status - ECG: <span class="black">Sinus rhythm</span>. Heart rate: <span class="black">77</span>. Pulse: <span class="black">Present</span>. Blood pressure: <span class="black">119/80 mmHg</span>. Respiration: <span class="black">12</span>. Conscious state: <span class="black">Appropriate</span>. SpO2: <span class="black">82%</span>. Temp.: <span class="black">37.22 C</span><flags indent="1" prio="status" printtime="1" sp="1"/></com>
+		<com time="04:48:60">Patient status - ECG: <span class="black">Sinus rhythm</span>. Heart rate: <span class="black">77</span>. Pulse: <span class="black">Present</span>. Blood pressure: <span class="black">134/88 mmHg</span>. Respiration: <span class="black">12</span>. Conscious state: <span class="black">Appropriate</span>. SpO2: <span class="black">92%</span>. Temp.: <span class="black">37.22 C</span><flags indent="1" prio="status" printtime="1" sp="1"/></com>
+		<com time="05:48:20">Patient status - ECG: <span class="black">Sinus rhythm</span>. Heart rate: <span class="black">77</span>. Pulse: <span class="black">Present</span>. Blood pressure: <span class="black">123/82 mmHg</span>. Respiration: <span class="black">12</span>. Conscious state: <span class="black">Appropriate</span>. SpO2: <span class="black">96%</span>. Temp.: <span class="black">37.22 C</span><flags indent="1" prio="status" printtime="1" sp="1"/></com>
+		<com time="06:48:20">Patient status - ECG: <span class="black">Sinus rhythm</span>. Heart rate: <span class="black">77</span>. Pulse: <span class="black">Present</span>. Blood pressure: <span class="black">128/85 mmHg</span>. Respiration: <span class="black">12</span>. Conscious state: <span class="black">Appropriate</span>. SpO2: <span class="black">96%</span>. Temp.: <span class="black">37.22 C</span><flags indent="1" prio="status" printtime="1" sp="1"/></com>
+		<com time="07:48:20">Patient status - ECG: <span class="black">Sinus rhythm</span>. Heart rate: <span class="black">77</span>. Pulse: <span class="black">Present</span>. Blood pressure: <span class="black">119/80 mmHg</span>. Respiration: <span class="black">12</span>. Conscious state: <span class="black">Appropriate</span>. SpO2: <span class="black">96%</span>. Temp.: <span class="black">37.22 C</span><flags indent="1" prio="status" printtime="1" sp="1"/></com>
+		<com time="08:48:20">Patient status - ECG: <span class="black">Sinus rhythm</span>. Heart rate: <span class="black">77</span>. Pulse: <span class="black">Present</span>. Blood pressure: <span class="black">132/87 mmHg</span>. Respiration: <span class="black">12</span>. Conscious state: <span class="black">Appropriate</span>. SpO2: <span class="black">98%</span>. Temp.: <span class="black">37.22 C</span><flags indent="1" prio="status" printtime="1" sp="1"/></com>
+		<com time="09:48:20">Patient status - ECG: <span class="black">Sinus rhythm</span>. Heart rate: <span class="black">77</span>. Pulse: <span class="black">Present</span>. Blood pressure: <span class="black">122/82 mmHg</span>. Respiration: <span class="black">12</span>. Conscious state: <span class="black">Appropriate</span>. SpO2: <span class="black">98%</span>. Temp.: <span class="black">37.22 C</span><flags indent="1" prio="status" printtime="1" sp="1"/></com>
+		<com time="10:48:20">Patient status - ECG: <span class="black">Sinus rhythm</span>. Heart rate: <span class="black">77</span>. Pulse: <span class="black">Present</span>. Blood pressure: <span class="black">122/82 mmHg</span>. Respiration: <span class="black">12</span>. Conscious state: <span class="black">Appropriate</span>. SpO2: <span class="black">98%</span>. Temp.: <span class="black">37.22 C</span><flags indent="1" prio="status" printtime="1" sp="1"/></com>
+		<com time="11:48:20">Patient status - ECG: <span class="black">Sinus rhythm</span>. Heart rate: <span class="black">77</span>. Pulse: <span class="black">Present</span>. Blood pressure: <span class="black">129/85 mmHg</span>. Respiration: <span class="black">12</span>. Conscious state: <span class="black">Appropriate</span>. SpO2: <span class="black">98%</span>. Temp.: <span class="black">37.22 C</span><flags indent="1" prio="status" printtime="1" sp="1"/></com>
+		<com time="12:48:20">Patient status - ECG: <span class="black">Sinus rhythm</span>. Heart rate: <span class="black">77</span>. Pulse: <span class="black">Present</span>. Blood pressure: <span class="black">121/81 mmHg</span>. Respiration: <span class="black">12</span>. Conscious state: <span class="black">Appropriate</span>. SpO2: <span class="black">98%</span>. Temp.: <span class="black">37.22 C</span><flags indent="1" prio="status" printtime="1" sp="1"/></com>
+		<com time="13:48:20">Patient status - ECG: <span class="black">Sinus rhythm</span>. Heart rate: <span class="black">77</span>. Pulse: <span class="black">Present</span>. Blood pressure: <span class="black">130/86 mmHg</span>. Respiration: <span class="black">12</span>. Conscious state: <span class="black">Appropriate</span>. SpO2: <span class="black">98%</span>. Temp.: <span class="black">37.22 C</span><flags indent="1" prio="status" printtime="1" sp="1"/></com>
+		<com time="14:48:20">Patient status - ECG: <span class="black">Sinus rhythm</span>. Heart rate: <span class="black">77</span>. Pulse: <span class="black">Present</span>. Blood pressure: <span class="black">134/88 mmHg</span>. Respiration: <span class="black">12</span>. Conscious state: <span class="black">Appropriate</span>. SpO2: <span class="black">98%</span>. Temp.: <span class="black">37.22 C</span><flags indent="1" prio="status" printtime="1" sp="1"/></com>
+		<com time="15:48:20">Patient status - ECG: <span class="black">Sinus rhythm</span>. Heart rate: <span class="black">77</span>. Pulse: <span class="black">Present</span>. Blood pressure: <span class="black">124/83 mmHg</span>. Respiration: <span class="black">12</span>. Conscious state: <span class="black">Appropriate</span>. SpO2: <span class="black">98%</span>. Temp.: <span class="black">37.22 C</span><flags indent="1" prio="status" printtime="1" sp="1"/></com>
+		<com time="16:48:20">Patient status - ECG: <span class="black">Sinus rhythm</span>. Heart rate: <span class="black">77</span>. Pulse: <span class="black">Present</span>. Blood pressure: <span class="black">126/84 mmHg</span>. Respiration: <span class="black">12</span>. Conscious state: <span class="black">Appropriate</span>. SpO2: <span class="black">98%</span>. Temp.: <span class="black">37.22 C</span><flags indent="1" prio="status" printtime="1" sp="1"/></com>
+		<com time="17:48:20">Patient status - ECG: <span class="black">Sinus rhythm</span>. Heart rate: <span class="black">77</span>. Pulse: <span class="black">Present</span>. Blood pressure: <span class="black">124/83 mmHg</span>. Respiration: <span class="black">12</span>. Conscious state: <span class="black">Appropriate</span>. SpO2: <span class="black">98%</span>. Temp.: <span class="black">37.22 C</span><flags indent="1" prio="status" printtime="1" sp="1"/></com>
+		<com time="18:48:20">Patient status - ECG: <span class="black">Sinus rhythm</span>. Heart rate: <span class="black">77</span>. Pulse: <span class="black">Present</span>. Blood pressure: <span class="black">117/80 mmHg</span>. Respiration: <span class="black">12</span>. Conscious state: <span class="black">Appropriate</span>. SpO2: <span class="black">98%</span>. Temp.: <span class="black">37.22 C</span><flags indent="1" prio="status" printtime="1" sp="1"/></com>
+		<com time="19:24:80">You stopped the session.<flags indent="1" prio="normal" printtime="1" sp="1"/></com>
+		<com time="19:24:80">
+			<flags prio="essential"/></com>
+		<com time="19:24:80"><span class="bold">Here are some general comments about the scenario:</span><flags prio="essential"/></com>
+		<com time="19:24:80">Note that you can question the patient. Perhaps this could provide you with useful information next time.<flags prio="essential" points="0" outof="1"/></com>
+		<com time="00:00:00">Unboosted: You got 2 points out of 14 possible points and 0 percent deduction.<flags prio="debug" sp="1"/></com>
+		<com time="00:00:00">You got 14%.<flags prio="essential" sp="1"/></com>
+		<com time="00:00:00"><span class="red">Disclaimer:</span><flags prio="essential" sp="1"/></com>
+		<com time="00:00:00"><span class="black">Emergency cardiovascular care is a dynamic science and advances in treatment and drug therapies occur rapidly. Prior to prescribing or administering, practitioners should carefully review all prescribing information associated with each agent discussed in this offering with respect to recommended dose, indications and contraindications.</span><flags prio="essential"/></com>
+	</debriefing>
+	<Log>
+		<startDateTime year="2015" month="10" day="29" hours="14" minutes="39" seconds="19"/>
+		<filenamebase><![CDATA[Pharm 5216-Dysrhythmias_10-28 29-15]]></filenamebase>
+		<scenarioInfo>
+			<miscellaneous></miscellaneous>
+			<ScenarioComment><![CDATA[]]></ScenarioComment>
+		</scenarioInfo>
+		<logElement timestamp="2015-10-29T14:39:19-05:00" hours="00" minutes="00" seconds="00" priority="3">
+			<ScenarioStart>Pharm 5216-Dysrhythmias_10-28 29-15</ScenarioStart>
+		</logElement>
+		<logElement timestamp="2015-10-29T14:39:19-05:00" hours="00" minutes="00" seconds="00" priority="1">
+			<ScenarioPatientInfo><name>Elder, James</name>
+				<age></age><ageunit>
+years</ageunit>
+				<weight></weight>
+				<weightunit>kg</weightunit>
+				<height></height>
+				<heightunit>cm</heightunit>
+				<gender>Male</gender>
+				<picturefile></picturefile>
+				<description></description>
+			</ScenarioPatientInfo></logElement>
+		<initialState>
+			<logElement timestamp="2015-10-29T14:39:19-05:00" hours="00" minutes="00" seconds="00" priority="3">
+				<ECG>
+					<Rhythm>Atrial Fibrillation (AFib)</Rhythm>
+					<HR>140</HR>
+				</ECG>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:39:19-05:00" hours="00" minutes="00" seconds="00" priority="3">
+				<EMD_PEA>off</EMD_PEA>
+			</logElement><logElement timestamp="2015-10-29T14:39:19-05:00" hours="00" minutes="00" seconds="00" priority="3">
+				<MuscularArtifact>off</MuscularArtifact>
+			</logElement><logElement timestamp="2015-10-29T14:39:19-05:00" hours="00" minutes="00" seconds="00" priority="3">
+				<ElectricalArtifact>off</ElectricalArtifact>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:39:19-05:00" hours="00" minutes="00" seconds="00" priority="3">
+				<HR value="140">140</HR>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:39:19-05:00" hours="00" minutes="00" seconds="00" priority="3">
+				<BP Systolic="115" Diastolic="50">
+					<Systolic>115</Systolic>
+					<Diastolic>50</Diastolic>
+				</BP>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:39:19-05:00" hours="00" minutes="00" seconds="00" priority="3">
+				<SpO2 value="85">85</SpO2>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:39:19-05:00" hours="00" minutes="00" seconds="00" priority="3">
+				<shocksForLife value="1">Shocks to conversion =  1</shocksForLife>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:39:19-05:00" hours="00" minutes="00" seconds="00" priority="3">
+				<pulseStrengthFemoralis value="2">Central pulses. Pulse strength = normal</pulseStrengthFemoralis>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:39:19-05:00" hours="00" minutes="00" seconds="00" priority="3">
+				<pulseStrengthBrachialis value="2">Pulse strength = normal</pulseStrengthBrachialis>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:39:19-05:00" hours="00" minutes="00" seconds="00" priority="3">
+				<pulseStrengthRadialis value="2">Pulse radialis/brachialis. Pulse strength = normal</pulseStrengthRadialis>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:39:19-05:00" hours="00" minutes="00" seconds="00" priority="3">
+				<CO value="5.6">5.6</CO>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:39:19-05:00" hours="00" minutes="00" seconds="00" priority="3">
+				<FIN2O value="0">0</FIN2O>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:39:19-05:00" hours="00" minutes="00" seconds="00" priority="3">
+				<ETN2O value="0">0</ETN2O>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:39:19-05:00" hours="00" minutes="00" seconds="00" priority="3">
+				<FIAnes value="0.0">0.0</FIAnes>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:39:19-05:00" hours="00" minutes="00" seconds="00" priority="3">
+				<ETAnes value="0.0">0.0</ETAnes>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:39:19-05:00" hours="00" minutes="00" seconds="00" priority="3">
+				<FIENF value="0.0">0.0</FIENF>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:39:19-05:00" hours="00" minutes="00" seconds="00" priority="3">
+				<ETENF value="0.0">0.0</ETENF>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:39:19-05:00" hours="00" minutes="00" seconds="00" priority="3">
+				<FIDES value="0.0">0.0</FIDES>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:39:19-05:00" hours="00" minutes="00" seconds="00" priority="3">
+				<ETDES value="0.0">0.0</ETDES>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:39:19-05:00" hours="00" minutes="00" seconds="00" priority="3">
+				<FIHAL value="0.0">0.0</FIHAL>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:39:19-05:00" hours="00" minutes="00" seconds="00" priority="3">
+				<ETHAL value="0.0">0.0</ETHAL>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:39:19-05:00" hours="00" minutes="00" seconds="00" priority="3">
+				<FIISO value="0.0">0.0</FIISO>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:39:19-05:00" hours="00" minutes="00" seconds="00" priority="3">
+				<ETISO value="0.0">0.0</ETISO>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:39:19-05:00" hours="00" minutes="00" seconds="00" priority="3">
+				<FISEV value="0.0">0.0</FISEV>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:39:19-05:00" hours="00" minutes="00" seconds="00" priority="3">
+				<ETSEV value="0.0">0.0</ETSEV>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:39:19-05:00" hours="00" minutes="00" seconds="00" priority="3">
+				<TO4>4</TO4>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:39:19-05:00" hours="00" minutes="00" seconds="00" priority="3">
+				<TO4FR value="100">100</TO4FR>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:39:19-05:00" hours="00" minutes="00" seconds="00" priority="3">
+				<AuscultationGap>off</AuscultationGap>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:39:19-05:00" hours="00" minutes="00" seconds="00" priority="3">
+				<Airway>
+					<airwayElement name="Trismus" changed="true" active="off" value="0"/>
+				</Airway>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:39:19-05:00" hours="00" minutes="00" seconds="00" priority="3">
+				<Airway>
+					<airwayElement name="Tongue" changed="true" active="off" value="0"/>
+				</Airway>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:39:19-05:00" hours="00" minutes="00" seconds="00" priority="3">
+				<Airway>
+					<airwayElement name="Pharyngeal Obstruction" changed="true" active="off" value="0"/>
+				</Airway>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:39:19-05:00" hours="00" minutes="00" seconds="00" priority="3">
+				<Airway>
+					<airwayElement name="Decr. Cervical ROM" changed="true" active="off" value="0"/>
+				</Airway>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:39:19-05:00" hours="00" minutes="00" seconds="00" priority="3">
+				<Airway>
+					<airwayElement name="Laryngospasm" changed="true" active="off" value="0"/>
+				</Airway>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:39:19-05:00" hours="00" minutes="00" seconds="00" priority="3">
+				<Airway>
+					<airwayElement name="Right Pneumothorax" changed="true" active="off" value="0"/>
+				</Airway>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:39:19-05:00" hours="00" minutes="00" seconds="00" priority="3">
+				<Airway>
+					<airwayElement name="Left Pneumothorax" changed="true" active="off" value="0"/>
+				</Airway>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:39:19-05:00" hours="00" minutes="00" seconds="00" priority="3">
+				<Airway>
+					<airwayElement name="Right lung resistance" changed="true" active="off" value="0"/>
+				</Airway>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:39:19-05:00" hours="00" minutes="00" seconds="00" priority="3">
+				<Airway>
+					<airwayElement name="Left lung resistance" changed="true" active="off" value="0"/>
+				</Airway>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:39:19-05:00" hours="00" minutes="00" seconds="00" priority="3">
+				<Airway>
+					<airwayElement name="Stomach decompression" changed="true" active="off" value="0"/>
+				</Airway>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:39:19-05:00" hours="00" minutes="00" seconds="00" priority="3">
+				<Airway>
+					<airwayElement name="Left Decr. Lung Compliance" changed="true" active="off" value="0"/>
+				</Airway>
+			</logElement>
+		</initialState>
+		<logElement timestamp="2015-10-29T14:39:19-05:00" hours="00" minutes="00" seconds="00" priority="4">
+			<HandlerStart>Pharm 5216 Dysrhythmias 2015</HandlerStart>
+		</logElement>
+		<vitalssummary>
+			<logElement timestamp="2015-10-29T14:39:19-05:00" hours="00" minutes="00" seconds="00" priority="3">
+				<HR value="140">140</HR>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:39:19-05:00" hours="00" minutes="00" seconds="00" priority="3">
+				<BP Systolic="115" Diastolic="50">
+					<Systolic>115</Systolic>
+					<Diastolic>50</Diastolic>
+				</BP>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:39:19-05:00" hours="00" minutes="00" seconds="00" priority="3">
+				<SpO2 value="85">85</SpO2>
+			</logElement>
+		</vitalssummary>
+		<logElement timestamp="2015-10-29T14:39:20-05:00" hours="00" minutes="00" seconds="01" priority="2">
+			<MonitorEcgLeadsAttached value="1">ECG leads attached</MonitorEcgLeadsAttached>
+		</logElement>
+		<logElement timestamp="2015-10-29T14:39:21-05:00" hours="00" minutes="00" seconds="02" priority="2">
+			<MonitorABPSensor value="1">ABP sensor connected</MonitorABPSensor>
+		</logElement>
+		<logElement timestamp="2015-10-29T14:39:23-05:00" hours="00" minutes="00" seconds="03" priority="2">
+			<Alarm>Alarm: Pulse HIGH</Alarm>
+		</logElement>
+		<logElement timestamp="2015-10-29T14:39:24-05:00" hours="00" minutes="00" seconds="04" priority="2">
+			<Alarm>Alarm: HR HIGH</Alarm>
+		</logElement>
+		<logElement timestamp="2015-10-29T14:39:25-05:00" hours="00" minutes="00" seconds="05" priority="2">
+			<Alarm>Alarm: SpO2 LOW</Alarm>
+		</logElement>
+		<logElement timestamp="2015-10-29T14:39:27-05:00" hours="00" minutes="00" seconds="07" priority="2">
+			<SpO2Probe/>
+		</logElement>
+		<logElement timestamp="2015-10-29T14:39:31-05:00" hours="00" minutes="00" seconds="11" priority="3">
+			<HR value="135">135</HR>
+		</logElement>
+		<vitalssummary>
+			<logElement timestamp="2015-10-29T14:40:20-05:00" hours="00" minutes="01" seconds="00" priority="3">
+				<HR value="136">136</HR>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:40:20-05:00" hours="00" minutes="01" seconds="00" priority="3">
+				<BP Systolic="115" Diastolic="50">
+					<Systolic>115</Systolic>
+					<Diastolic>50</Diastolic>
+				</BP>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:40:20-05:00" hours="00" minutes="01" seconds="00" priority="3">
+				<SpO2 value="85">85</SpO2>
+			</logElement>
+		</vitalssummary>
+		<vitalssummary>
+			<logElement timestamp="2015-10-29T14:41:20-05:00" hours="00" minutes="02" seconds="00" priority="3">
+				<HR value="136">136</HR>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:41:20-05:00" hours="00" minutes="02" seconds="00" priority="3">
+				<BP Systolic="115" Diastolic="50">
+					<Systolic>115</Systolic>
+					<Diastolic>50</Diastolic>
+				</BP>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:41:20-05:00" hours="00" minutes="02" seconds="00" priority="3">
+				<SpO2 value="85">85</SpO2>
+			</logElement>
+		</vitalssummary>
+		<logElement timestamp="2015-10-29T14:41:59-05:00" hours="00" minutes="02" seconds="40" priority="2">
+			<ABCEvent>BEST recommendation for rhythm control</ABCEvent>
+		</logElement>
+		<logElement timestamp="2015-10-29T14:41:59-05:00" hours="00" minutes="02" seconds="40" priority="1">
+			<DebriefComment>
+				<DCComment><![CDATA[ ]]>
+				</DCComment>
+				<DCEvent></DCEvent>
+				<DCCorrect>true</DCCorrect>
+				<DCGrade>2 </DCGrade>
+				<DCGradeDescription>
+				</DCGradeDescription>
+			</DebriefComment></logElement>
+		<logElement timestamp="2015-10-29T14:42:17-05:00" hours="00" minutes="02" seconds="57" priority="3">
+			<ECG>
+				<Rhythm>Sinus Rhythm</Rhythm>
+				<HR>80</HR>
+			</ECG>
+		</logElement>
+		<logElement timestamp="2015-10-29T14:42:17-05:00" hours="00" minutes="02" seconds="57" priority="3">
+			<EMD_PEA>off</EMD_PEA>
+		</logElement><logElement timestamp="2015-10-29T14:42:17-05:00" hours="00" minutes="02" seconds="57" priority="3">
+			<MuscularArtifact>off</MuscularArtifact>
+		</logElement><logElement timestamp="2015-10-29T14:42:17-05:00" hours="00" minutes="02" seconds="57" priority="3">
+			<ElectricalArtifact>off</ElectricalArtifact>
+		</logElement>
+		<vitalssummary>
+			<logElement timestamp="2015-10-29T14:42:20-05:00" hours="00" minutes="03" seconds="00" priority="3">
+				<HR value="138">138</HR>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:42:20-05:00" hours="00" minutes="03" seconds="00" priority="3">
+				<BP Systolic="115" Diastolic="50">
+					<Systolic>115</Systolic>
+					<Diastolic>50</Diastolic>
+				</BP>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:42:20-05:00" hours="00" minutes="03" seconds="00" priority="3">
+				<SpO2 value="85">85</SpO2>
+			</logElement>
+		</vitalssummary>
+		<logElement timestamp="2015-10-29T14:42:27-05:00" hours="00" minutes="03" seconds="07" priority="3">
+			<SpO2 value="92">92</SpO2>
+		</logElement>
+		<logElement timestamp="2015-10-29T14:42:29-05:00" hours="00" minutes="03" seconds="09" priority="3">
+			<HR value="80">80</HR>
+		</logElement>
+		<vitalssummary>
+			<logElement timestamp="2015-10-29T14:43:20-05:00" hours="00" minutes="04" seconds="00" priority="3">
+				<HR value="81">81</HR>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:43:20-05:00" hours="00" minutes="04" seconds="00" priority="3">
+				<BP Systolic="115" Diastolic="50">
+					<Systolic>115</Systolic>
+					<Diastolic>50</Diastolic>
+				</BP>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:43:20-05:00" hours="00" minutes="04" seconds="00" priority="3">
+				<SpO2 value="94">94</SpO2>
+			</logElement>
+		</vitalssummary>
+		<logElement timestamp="2015-10-29T14:43:23-05:00" hours="00" minutes="04" seconds="04" priority="2">
+			<ABCEvent>UPDATED VITALS FOR V-TACH</ABCEvent>
+		</logElement>
+		<logElement timestamp="2015-10-29T14:43:23-05:00" hours="00" minutes="04" seconds="04" priority="3">
+			<ECG>
+				<Rhythm>Ventricular Tachycardia (VT)</Rhythm>
+				<HR>180</HR>
+			</ECG>
+		</logElement>
+		<logElement timestamp="2015-10-29T14:43:23-05:00" hours="00" minutes="04" seconds="04" priority="3">
+			<EMD_PEA>off</EMD_PEA>
+		</logElement><logElement timestamp="2015-10-29T14:43:23-05:00" hours="00" minutes="04" seconds="04" priority="3">
+			<MuscularArtifact>off</MuscularArtifact>
+		</logElement><logElement timestamp="2015-10-29T14:43:23-05:00" hours="00" minutes="04" seconds="04" priority="3">
+			<ElectricalArtifact>off</ElectricalArtifact>
+		</logElement>
+		<logElement timestamp="2015-10-29T14:43:23-05:00" hours="00" minutes="04" seconds="04" priority="3">
+			<ECG>
+				<Rhythm>Ventricular Tachycardia (VT)</Rhythm>
+				<HR>180</HR>
+			</ECG>
+		</logElement>
+		<logElement timestamp="2015-10-29T14:43:23-05:00" hours="00" minutes="04" seconds="04" priority="3">
+			<EMD_PEA>off</EMD_PEA>
+		</logElement><logElement timestamp="2015-10-29T14:43:23-05:00" hours="00" minutes="04" seconds="04" priority="3">
+			<MuscularArtifact>off</MuscularArtifact>
+		</logElement><logElement timestamp="2015-10-29T14:43:23-05:00" hours="00" minutes="04" seconds="04" priority="3">
+			<ElectricalArtifact>off</ElectricalArtifact>
+		</logElement>
+		<logElement timestamp="2015-10-29T14:43:24-05:00" hours="00" minutes="04" seconds="04" priority="2">
+			<Alarm>Alarm: ABPs LOW</Alarm>
+		</logElement>
+		<logElement timestamp="2015-10-29T14:43:30-05:00" hours="00" minutes="04" seconds="10" priority="3">
+			<BreathRate value="30">30</BreathRate>
+		</logElement>
+		<logElement timestamp="2015-10-29T14:43:30-05:00" hours="00" minutes="04" seconds="11" priority="2">
+			<Alarm>Alarm: EXTREME TACHY</Alarm>
+		</logElement>
+		<logElement timestamp="2015-10-29T14:43:31-05:00" hours="00" minutes="04" seconds="11" priority="3">
+			<BP Systolic="80" Diastolic="40">
+				<Systolic>80</Systolic>
+				<Diastolic>40</Diastolic>
+			</BP>
+		</logElement>
+		<logElement timestamp="2015-10-29T14:43:32-05:00" hours="00" minutes="04" seconds="12" priority="3">
+			<HR value="167">167</HR>
+		</logElement>
+		<logElement timestamp="2015-10-29T14:43:32-05:00" hours="00" minutes="04" seconds="12" priority="3">
+			<SpO2 value="82">82</SpO2>
+		</logElement>
+		<logElement timestamp="2015-10-29T14:43:33-05:00" hours="00" minutes="04" seconds="13" priority="2">
+			<Alarm>Alarm: TACHY (Pulse)</Alarm>
+		</logElement>
+		<logElement timestamp="2015-10-29T14:43:45-05:00" hours="00" minutes="04" seconds="25" priority="2">
+			<ABCEvent>BEST recommendation for Cardioversion</ABCEvent>
+		</logElement>
+		<logElement timestamp="2015-10-29T14:43:45-05:00" hours="00" minutes="04" seconds="25" priority="1">
+			<DebriefComment>
+				<DCComment><![CDATA[ ]]>
+				</DCComment>
+				<DCEvent></DCEvent>
+				<DCCorrect>true</DCCorrect>
+				<DCGrade>2 </DCGrade>
+				<DCGradeDescription>
+				</DCGradeDescription>
+			</DebriefComment></logElement>
+		<logElement timestamp="2015-10-29T14:43:51-05:00" hours="00" minutes="04" seconds="31" priority="2">
+			<ABCEvent>UPDATED VITALS FOR DISCHARGE</ABCEvent>
+		</logElement>
+		<logElement timestamp="2015-10-29T14:43:51-05:00" hours="00" minutes="04" seconds="31" priority="3">
+			<ECG>
+				<Rhythm>Sinus Rhythm</Rhythm>
+				<HR>77</HR>
+			</ECG>
+		</logElement>
+		<logElement timestamp="2015-10-29T14:43:51-05:00" hours="00" minutes="04" seconds="31" priority="3">
+			<EMD_PEA>off</EMD_PEA>
+		</logElement><logElement timestamp="2015-10-29T14:43:51-05:00" hours="00" minutes="04" seconds="31" priority="3">
+			<MuscularArtifact>off</MuscularArtifact>
+		</logElement><logElement timestamp="2015-10-29T14:43:51-05:00" hours="00" minutes="04" seconds="31" priority="3">
+			<ElectricalArtifact>off</ElectricalArtifact>
+		</logElement>
+		<logElement timestamp="2015-10-29T14:43:51-05:00" hours="00" minutes="04" seconds="31" priority="3">
+			<ECG>
+				<Rhythm>Sinus Rhythm</Rhythm>
+				<HR>77</HR>
+			</ECG>
+		</logElement>
+		<logElement timestamp="2015-10-29T14:43:51-05:00" hours="00" minutes="04" seconds="31" priority="3">
+			<EMD_PEA>off</EMD_PEA>
+		</logElement><logElement timestamp="2015-10-29T14:43:51-05:00" hours="00" minutes="04" seconds="31" priority="3">
+			<MuscularArtifact>off</MuscularArtifact>
+		</logElement><logElement timestamp="2015-10-29T14:43:51-05:00" hours="00" minutes="04" seconds="31" priority="3">
+			<ElectricalArtifact>off</ElectricalArtifact>
+		</logElement>
+		<logElement timestamp="2015-10-29T14:43:57-05:00" hours="00" minutes="04" seconds="37" priority="3">
+			<BreathRate value="12">12</BreathRate>
+		</logElement>
+		<logElement timestamp="2015-10-29T14:43:58-05:00" hours="00" minutes="04" seconds="38" priority="3">
+			<BP Systolic="126" Diastolic="84">
+				<Systolic>126</Systolic>
+				<Diastolic>84</Diastolic>
+			</BP>
+		</logElement>
+		<logElement timestamp="2015-10-29T14:43:59-05:00" hours="00" minutes="04" seconds="39" priority="3">
+			<HR value="97">97</HR>
+		</logElement>
+		<logElement timestamp="2015-10-29T14:44:06-05:00" hours="00" minutes="04" seconds="46" priority="3">
+			<HR value="75">75</HR>
+		</logElement>
+		<logElement timestamp="2015-10-29T14:44:15-05:00" hours="00" minutes="04" seconds="55" priority="3">
+			<SpO2 value="96">96</SpO2>
+		</logElement>
+		<vitalssummary>
+			<logElement timestamp="2015-10-29T14:44:20-05:00" hours="00" minutes="05" seconds="00" priority="3">
+				<HR value="77">77</HR>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:44:20-05:00" hours="00" minutes="05" seconds="00" priority="3">
+				<BP Systolic="126" Diastolic="84">
+					<Systolic>126</Systolic>
+					<Diastolic>84</Diastolic>
+				</BP>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:44:20-05:00" hours="00" minutes="05" seconds="00" priority="3">
+				<SpO2 value="96">96</SpO2>
+			</logElement>
+		</vitalssummary>
+		<vitalssummary>
+			<logElement timestamp="2015-10-29T14:45:20-05:00" hours="00" minutes="06" seconds="00" priority="3">
+				<HR value="75">75</HR>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:45:20-05:00" hours="00" minutes="06" seconds="00" priority="3">
+				<BP Systolic="126" Diastolic="84">
+					<Systolic>126</Systolic>
+					<Diastolic>84</Diastolic>
+				</BP>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:45:20-05:00" hours="00" minutes="06" seconds="00" priority="3">
+				<SpO2 value="96">96</SpO2>
+			</logElement>
+		</vitalssummary>
+		<vitalssummary>
+			<logElement timestamp="2015-10-29T14:46:20-05:00" hours="00" minutes="07" seconds="00" priority="3">
+				<HR value="76">76</HR>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:46:20-05:00" hours="00" minutes="07" seconds="00" priority="3">
+				<BP Systolic="126" Diastolic="84">
+					<Systolic>126</Systolic>
+					<Diastolic>84</Diastolic>
+				</BP>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:46:20-05:00" hours="00" minutes="07" seconds="00" priority="3">
+				<SpO2 value="96">96</SpO2>
+			</logElement>
+		</vitalssummary>
+		<vitalssummary>
+			<logElement timestamp="2015-10-29T14:47:20-05:00" hours="00" minutes="08" seconds="00" priority="3">
+				<HR value="76">76</HR>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:47:20-05:00" hours="00" minutes="08" seconds="00" priority="3">
+				<BP Systolic="126" Diastolic="84">
+					<Systolic>126</Systolic>
+					<Diastolic>84</Diastolic>
+				</BP>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:47:20-05:00" hours="00" minutes="08" seconds="00" priority="3">
+				<SpO2 value="96">96</SpO2>
+			</logElement>
+		</vitalssummary>
+		<vitalssummary>
+			<logElement timestamp="2015-10-29T14:48:20-05:00" hours="00" minutes="09" seconds="00" priority="3">
+				<HR value="75">75</HR>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:48:20-05:00" hours="00" minutes="09" seconds="00" priority="3">
+				<BP Systolic="126" Diastolic="84">
+					<Systolic>126</Systolic>
+					<Diastolic>84</Diastolic>
+				</BP>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:48:20-05:00" hours="00" minutes="09" seconds="00" priority="3">
+				<SpO2 value="98">98</SpO2>
+			</logElement>
+		</vitalssummary>
+		<vitalssummary>
+			<logElement timestamp="2015-10-29T14:49:20-05:00" hours="00" minutes="10" seconds="00" priority="3">
+				<HR value="75">75</HR>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:49:20-05:00" hours="00" minutes="10" seconds="00" priority="3">
+				<BP Systolic="126" Diastolic="84">
+					<Systolic>126</Systolic>
+					<Diastolic>84</Diastolic>
+				</BP>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:49:20-05:00" hours="00" minutes="10" seconds="00" priority="3">
+				<SpO2 value="98">98</SpO2>
+			</logElement>
+		</vitalssummary>
+		<vitalssummary>
+			<logElement timestamp="2015-10-29T14:50:20-05:00" hours="00" minutes="11" seconds="00" priority="3">
+				<HR value="78">78</HR>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:50:20-05:00" hours="00" minutes="11" seconds="00" priority="3">
+				<BP Systolic="126" Diastolic="84">
+					<Systolic>126</Systolic>
+					<Diastolic>84</Diastolic>
+				</BP>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:50:20-05:00" hours="00" minutes="11" seconds="00" priority="3">
+				<SpO2 value="98">98</SpO2>
+			</logElement>
+		</vitalssummary>
+		<logElement timestamp="2015-10-29T14:50:29-05:00" hours="00" minutes="11" seconds="10" priority="2">
+			<ABCEvent>BEST discharge recommendations for A-Fib</ABCEvent>
+		</logElement>
+		<logElement timestamp="2015-10-29T14:50:29-05:00" hours="00" minutes="11" seconds="10" priority="1">
+			<DebriefComment>
+				<DCComment><![CDATA[ ]]>
+				</DCComment>
+				<DCEvent></DCEvent>
+				<DCCorrect>true</DCCorrect>
+				<DCGrade>2 </DCGrade>
+				<DCGradeDescription>
+				</DCGradeDescription>
+			</DebriefComment></logElement>
+		<logElement timestamp="2015-10-29T14:50:41-05:00" hours="00" minutes="11" seconds="22" priority="2">
+			<ABCEvent>BEST recommendations for anticoagulation at discharge</ABCEvent>
+		</logElement>
+		<logElement timestamp="2015-10-29T14:50:41-05:00" hours="00" minutes="11" seconds="22" priority="1">
+			<DebriefComment>
+				<DCComment><![CDATA[ ]]>
+				</DCComment>
+				<DCEvent></DCEvent>
+				<DCCorrect>true</DCCorrect>
+				<DCGrade>2 </DCGrade>
+				<DCGradeDescription>
+				</DCGradeDescription>
+			</DebriefComment></logElement>
+		<vitalssummary>
+			<logElement timestamp="2015-10-29T14:51:20-05:00" hours="00" minutes="12" seconds="00" priority="3">
+				<HR value="76">76</HR>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:51:20-05:00" hours="00" minutes="12" seconds="00" priority="3">
+				<BP Systolic="126" Diastolic="84">
+					<Systolic>126</Systolic>
+					<Diastolic>84</Diastolic>
+				</BP>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:51:20-05:00" hours="00" minutes="12" seconds="00" priority="3">
+				<SpO2 value="98">98</SpO2>
+			</logElement>
+		</vitalssummary>
+		<logElement timestamp="2015-10-29T14:52:18-05:00" hours="00" minutes="12" seconds="59" priority="2">
+			<ABCEvent>BEST Score</ABCEvent>
+		</logElement>
+		<logElement timestamp="2015-10-29T14:52:18-05:00" hours="00" minutes="12" seconds="59" priority="1">
+			<DebriefComment>
+				<DCComment><![CDATA[ ]]>
+				</DCComment>
+				<DCEvent></DCEvent>
+				<DCCorrect>true</DCCorrect>
+				<DCGrade>2 </DCGrade>
+				<DCGradeDescription>
+				</DCGradeDescription>
+			</DebriefComment></logElement>
+		<vitalssummary>
+			<logElement timestamp="2015-10-29T14:52:20-05:00" hours="00" minutes="13" seconds="00" priority="3">
+				<HR value="76">76</HR>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:52:20-05:00" hours="00" minutes="13" seconds="00" priority="3">
+				<BP Systolic="126" Diastolic="84">
+					<Systolic>126</Systolic>
+					<Diastolic>84</Diastolic>
+				</BP>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:52:20-05:00" hours="00" minutes="13" seconds="00" priority="3">
+				<SpO2 value="98">98</SpO2>
+			</logElement>
+		</vitalssummary>
+		<vitalssummary>
+			<logElement timestamp="2015-10-29T14:53:20-05:00" hours="00" minutes="14" seconds="00" priority="3">
+				<HR value="76">76</HR>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:53:20-05:00" hours="00" minutes="14" seconds="00" priority="3">
+				<BP Systolic="126" Diastolic="84">
+					<Systolic>126</Systolic>
+					<Diastolic>84</Diastolic>
+				</BP>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:53:20-05:00" hours="00" minutes="14" seconds="00" priority="3">
+				<SpO2 value="98">98</SpO2>
+			</logElement>
+		</vitalssummary>
+		<logElement timestamp="2015-10-29T14:53:42-05:00" hours="00" minutes="14" seconds="23" priority="2">
+			<ABCEvent>INCORRECT discharge recommendation for length</ABCEvent>
+		</logElement>
+		<logElement timestamp="2015-10-29T14:53:42-05:00" hours="00" minutes="14" seconds="23" priority="1">
+			<DebriefComment>
+				<DCComment><![CDATA[ ]]>
+				</DCComment>
+				<DCEvent></DCEvent>
+				<DCCorrect>false</DCCorrect>
+			</DebriefComment></logElement>
+		<vitalssummary>
+			<logElement timestamp="2015-10-29T14:54:20-05:00" hours="00" minutes="15" seconds="00" priority="3">
+				<HR value="76">76</HR>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:54:20-05:00" hours="00" minutes="15" seconds="00" priority="3">
+				<BP Systolic="126" Diastolic="84">
+					<Systolic>126</Systolic>
+					<Diastolic>84</Diastolic>
+				</BP>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:54:20-05:00" hours="00" minutes="15" seconds="00" priority="3">
+				<SpO2 value="98">98</SpO2>
+			</logElement>
+		</vitalssummary>
+		<logElement timestamp="2015-10-29T14:54:50-05:00" hours="00" minutes="15" seconds="31" priority="2">
+			<ABCEvent>BEST discharge recommendation for HTN</ABCEvent>
+		</logElement>
+		<logElement timestamp="2015-10-29T14:54:50-05:00" hours="00" minutes="15" seconds="31" priority="1">
+			<DebriefComment>
+				<DCComment><![CDATA[ ]]>
+				</DCComment>
+				<DCEvent></DCEvent>
+				<DCCorrect>true</DCCorrect>
+				<DCGrade>2 </DCGrade>
+				<DCGradeDescription>
+				</DCGradeDescription>
+			</DebriefComment></logElement>
+		<logElement timestamp="2015-10-29T14:54:51-05:00" hours="00" minutes="15" seconds="32" priority="2">
+			<ABCEvent>BEST discharge recommendation for DM</ABCEvent>
+		</logElement>
+		<logElement timestamp="2015-10-29T14:54:51-05:00" hours="00" minutes="15" seconds="32" priority="1">
+			<DebriefComment>
+				<DCComment><![CDATA[ ]]>
+				</DCComment>
+				<DCEvent></DCEvent>
+				<DCCorrect>true</DCCorrect>
+				<DCGrade>2 </DCGrade>
+				<DCGradeDescription>
+				</DCGradeDescription>
+			</DebriefComment></logElement>
+		<vitalssummary>
+			<logElement timestamp="2015-10-29T14:55:20-05:00" hours="00" minutes="16" seconds="00" priority="3">
+				<HR value="75">75</HR>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:55:20-05:00" hours="00" minutes="16" seconds="00" priority="3">
+				<BP Systolic="126" Diastolic="84">
+					<Systolic>126</Systolic>
+					<Diastolic>84</Diastolic>
+				</BP>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:55:20-05:00" hours="00" minutes="16" seconds="00" priority="3">
+				<SpO2 value="98">98</SpO2>
+			</logElement>
+		</vitalssummary>
+		<vitalssummary>
+			<logElement timestamp="2015-10-29T14:56:20-05:00" hours="00" minutes="17" seconds="00" priority="3">
+				<HR value="77">77</HR>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:56:20-05:00" hours="00" minutes="17" seconds="00" priority="3">
+				<BP Systolic="126" Diastolic="84">
+					<Systolic>126</Systolic>
+					<Diastolic>84</Diastolic>
+				</BP>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:56:20-05:00" hours="00" minutes="17" seconds="00" priority="3">
+				<SpO2 value="98">98</SpO2>
+			</logElement>
+		</vitalssummary>
+		<vitalssummary>
+			<logElement timestamp="2015-10-29T14:57:20-05:00" hours="00" minutes="18" seconds="00" priority="3">
+				<HR value="77">77</HR>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:57:20-05:00" hours="00" minutes="18" seconds="00" priority="3">
+				<BP Systolic="126" Diastolic="84">
+					<Systolic>126</Systolic>
+					<Diastolic>84</Diastolic>
+				</BP>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:57:20-05:00" hours="00" minutes="18" seconds="00" priority="3">
+				<SpO2 value="98">98</SpO2>
+			</logElement>
+		</vitalssummary>
+		<vitalssummary>
+			<logElement timestamp="2015-10-29T14:58:20-05:00" hours="00" minutes="19" seconds="00" priority="3">
+				<HR value="76">76</HR>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:58:20-05:00" hours="00" minutes="19" seconds="00" priority="3">
+				<BP Systolic="126" Diastolic="84">
+					<Systolic>126</Systolic>
+					<Diastolic>84</Diastolic>
+				</BP>
+			</logElement>
+			<logElement timestamp="2015-10-29T14:58:20-05:00" hours="00" minutes="19" seconds="00" priority="3">
+				<SpO2 value="98">98</SpO2>
+			</logElement>
+		</vitalssummary>
+		<logElement timestamp="2015-10-29T14:58:37-05:00" hours="00" minutes="19" seconds="18" priority="3">
+			<ScenarioStop></ScenarioStop>
+		</logElement>
+	</Log>
+</simtest>
